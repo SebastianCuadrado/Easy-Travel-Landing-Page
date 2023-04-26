@@ -7,119 +7,151 @@
     <meta name="description" content="The Landing Page of Easy Travel" />
     <meta name="authors" content="Grupo 5 Arquitectura Web" />
     <title>EasyTravel</title>
-
+    <link rel="stylesheet" type="text/css" href="inner-page-style.css">
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Prompt:ital,wght@1,300&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/iconodiscover.ico">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link href="CSS/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c13904b08e.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    
-    
-      
-    
-
     <main>
       <div class="banner">
-        
-          <br>
+        <article id="Inicio">
           
-            <nav class="navbar navbar-expand bg-light navbar-light shadow-lg">
-              <a class="navbar-brand">
-                <h1>EasyTravel</h1>
-              </a>
-  
-              <div class="navbar-nav">
-                <a
-                  href="#Inicio"
-                  class="nav-item nav-link"
-                  style="text-align: right"
-                  >Inicio</a
-                >
-                <a href="#Destinos" class="nav-item nav-link"
-                  >Destinos Turisticos</a
-                >
-                <a href="#viajes" class="nav-item nav-link">Viajes</a>
-                <a href="#hoteles" class="nav-item nav-link">Hoteles</a>
-                <a href="#contacto" class="nav-item nav-link">Contacto</a>
-              </div>
+            <nav
+              class="barra-navegacion"
+              style="background-color: rgba(120, 202, 210, 0.5)"
+            >
+              <!--<nav class="navbar navbar-expand bg-light navbar-light shadow-lg">-->
+
+              <ul class="nav-list">
+                
+                  <a >
+                    <h1>EasyTravel</h1>
+                  </a>
+                
+                <a href="#Inicio" ><h2>Inicio</h2></a>
+                
+                  <a href="#Destinos" 
+                    >
+                    <h2>Destinos Turisticos</h2></a
+                  >
+                
+                <a href="#viajes" ><h2>Viajes</h2></a>
+                <a href="#hoteles" ><h2>Hoteles</h2></a>
+                
+                  <a href="#contacto" 
+                    ><h2>Opiniones y Contacto</h2></a
+                  >
+                
+              </ul>
             </nav>
           
-       
-        <article id="Inicio">
           <img src="image/playa_familia.jpg" alt="Figura1" />
 
+          <!--</nav>-->
           <div class="container">
-            <h1 class="titulo1">Descubre el mundo de una forma más facil!!</h1>
+            <div class="texto">
+              <h1 class="titulo1">
+                Descubre el mundo de una forma más facil!!
+              </h1>
 
-            <p>
-              Descarga EasyTravel y no esperes más a crear tu cuenta. <br />Con
-              funcionalidades utiles que te facilitarán a encontrar <br />tu
-              proximo destino turistico
-            </p>
+              <p>
+                Descarga EasyTravel y no esperes más a crear tu cuenta.
+                <br />Con funcionalidades utiles que te facilitarán a encontrar
+                <br />tu proximo destino turistico
+              </p>
+            </div>
+
+            <button class="boton registrar">Registrate ahora</button>
           </div>
-
-          <button class="boton registrar">Registrate ahora</button>
         </article>
       </div>
 
-      <article id="Descargas">
-        <header>
+      <section class="descargas">
+        <article id="Descargas">
           <h1>Descargas</h1>
-          <h2>Android</h2>
-          <h2>IOS</h2>
-        </header>
-      </article>
+          <div class="so">
+            <h2>Android</h2>
+            <h2>IOS</h2>
+          </div>
+
+          <div class="play-app">
+            <img src="image/googleplay.png" alt="descargalo en play store" />
+            <img src="image/appstore.png" alt="descargalo en app store" />
+          </div>
+        </article>
+      </section>
 
       <article id="Destinos">
-        <header>
-          <h1>Encuentra un destino turístico cerca de donde estés!!</h1>
-        </header>
+        <section class="destinos">
+          <div class="descripcion">
+            <header>
+              <h1>Encuentra un destino turístico cerca de donde estés!!</h1>
+            </header>
 
-        <section>
-          <p>
-            Con sus impresionantes vistas panorámicas, antiguos <br />templos y
-            fortalezas, y una naturaleza sorprendente, Machu <br />Picchu es una
-            experiencia única que no puedes perderte. Su <br />belleza natural,
-            rica historia y misteriosa leyenda, hacen de <br />Machu Picchu un
-            destino turistico fascinante para visitantes <br />de todo el mundo
-          </p>
-          <button>Conoce más aqui</button>
+            <section>
+              <p>
+                Con sus impresionantes vistas panorámicas, antiguos
+                <br />templos y fortalezas, y una naturaleza sorprendente, Machu
+                <br />Picchu es una experiencia única que no puedes perderte. Su
+                <br />belleza natural, rica historia y misteriosa leyenda, hacen
+                de <br />Machu Picchu un destino turistico fascinante para
+                visitantes <br />de todo el mundo
+              </p>
+              <button>Conoce más aqui</button>
+            </section>
+          </div>
+          <figure>
+            <img src="image/machupichu.jpg" alt="Figura2" />
+          </figure>
         </section>
-
-        <figure>
-          <img src="image/machupichu.jpg" alt="Figura2" />
-        </figure>
       </article>
 
-      <article id="viajes">
-        <header>
-          <h1>Viajes</h1>
-        </header>
+      <section class="viajes">
+        <article id="viajes">
+          <div class="descripcion">
+            <h1>Viajes</h1>
 
-        <section>
-          <p>
-            En nuestra sección de viajes, te ofrecemos información sobre los
-            costos de <br />vuelos y empresas de transporte para viajar. Te
-            brindamos detalles sobre las <br />opciones disponibles, como las
-            aerolíneas, rutas y horarios, para que puedas <br />comparar precios
-            y encontrar las mejores opciones para tus viajes. <br />Además,
-            también te proporcionamos recomendaciones y consejos útiles
-            <br />para ahorrar en tus vuelos y sacar el máximo provecho de tus
-            viajes. <br />Descubre todo lo que necesitas saber sobre los costos
-            de vuelos y empresas de transporte en nuestra sección de viajes.
-          </p>
-        </section>
+            <p>
+              En nuestra sección de viajes, te ofrecemos información sobre los
+              costos de <br />vuelos y empresas de transporte para viajar. Te
+              brindamos detalles sobre las <br />opciones disponibles, como las
+              aerolíneas, rutas y horarios, para que puedas <br />comparar
+              precios y encontrar las mejores opciones para tus viajes.
+              <br />Además, también te proporcionamos recomendaciones y consejos
+              útiles <br />para ahorrar en tus vuelos y sacar el máximo provecho
+              de tus viajes. <br />Descubre todo lo que necesitas saber sobre
+              los costos de vuelos y empresas de transporte en nuestra sección
+              de viajes.
+            </p>
+            <div class="aerolineas">
+              <img src="image/latam.png" alt="logo de la aerolinea latam" />
+              <img src="image/sky.png" alt="logo de la aerolinea sky" />
+              <img src="image/avianca.png" alt="logo de la aerolinea avianca" />
+            </div>
+          </div>
 
-        <figure>
-          <img src="image/aeropuerto.jpg" alt="Figura3" />
-        </figure>
-      </article>
-
-      <article id="hoteles">
-        <header>
+          <figure>
+            <img src="image/aeropuerto.jpg" alt="Figura3" />
+          </figure>
+        </article>
+      </section>
+      <section class="hotel">
+        <article id="hoteles">
           <h1>Hoteles</h1>
-        </header>
 
-        <section>
           <p>
             Te ofrecemos información detallada sobre los precios y
             <br />servicios de los hoteles. Te brindamos una selección de
@@ -132,15 +164,17 @@
             <br />de cada hotel, sus servicios y comodidades, asi como las
             <br />opiniones y comentarios de otros huéspedes.
           </p>
-        </section>
 
-        <figure>
           <img src="image/hotel_cds.jpg" alt="Figura4" />
-        </figure>
-      </article>
-
-      <article>
-        <section>
+        </article>
+      </section>
+      <div class="opinion">
+        <article id="Opiniones y Contacto">
+          <div class="figura"></div>
+          <img
+            src="image/mochilera.jpg"
+            alt="persona con mochila grande feliz "
+          />
           <p>
             "He utilizado esta aplicación para planificar mis <br />últimas
             vacaciones en Perú y debo decir que estoy <br />muy impresionado. La
@@ -150,19 +184,31 @@
             que <br />pude encontrar una gran variedad de opciones de
             <br />alojamiento a precios muy razonables."
             <br />
-            <br />Jerry Acosta
+            <br />Fernanda Acosta
           </p>
-        </section>
-      </article>
+        
+        </article>
+      </div>
+      
     </main>
 
-    <footer id="contacto">
+    <footer >
+    <div class="descp">
       <h3>EasyTravel</h3>
       <p>
         Esta aplicación permite la reservación <br />para viajes y hoteles según
         la <br />preferencia del usuario.
       </p>
+    </div>
+      <div class="social">
       <h3>Social Media</h3>
+      <ul class="redes">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        
+      </ul>
+    </div>
     </footer>
   </body>
 </html>

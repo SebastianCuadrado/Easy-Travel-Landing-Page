@@ -1,8 +1,10 @@
 html {
-  font-family: sans-serif;
+  
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  max-width: 100%;
 }
 body {
   margin: 0;
@@ -13,8 +15,29 @@ body {
   color: #000000;
   text-align: left;
   background-color: #f3f3f3;
+  max-width: auto ;
 }
-
+a {
+	background-color: transparent;
+	text-decoration: none;
+}
+ul {
+	list-style: disc;margin: 0 0;
+}
+ul > li {
+	position: relative;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+.container {
+	max-width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*
 hr {
   box-sizing: content-box;
   height: 0;
@@ -48,6 +71,7 @@ a {
 body {
   min-width: 992px !important;
 }
+
 
 .container {
   min-width: 992px !important;
@@ -181,31 +205,9 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
-.navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  padding-right: 20px;
-  margin-right: 1rem;
-  font-size: 1rem;
-  line-height: inherit;
-  white-space: normal;
-}
 
-.navbar-nav {
-  display: flex;
-  flex-direction: column;
-  padding-right: 0;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-  position: static;
-}
 
-.navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 0;
-}
+
 .navbar-expand .navbar-nav {
   flex-direction: row;
 }
@@ -213,40 +215,323 @@ body {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
+/*
 
 
 /*Banner*/
+
+
+
+
 .banner {
 	position: relative;
 	margin-bottom: -8px;
 }
 
 .banner img {
+  
 	width: 100%;
+  height: 80%;
 }
-.banner .container {
+
+
+.barra-navegacion{
+  
+  width: 86%;
+  position: absolute;
+
+  height: 74px;
+  left: 7%;
+  top: 46px;
+  z-index: 9;
+  font-size: 15px;
+border-radius: 20px;
+
+	
+}
+
+
+.barra-navegacion .nav-list {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+width: 86%;
+  font-family: "Roboto";
+  justify-content: space-around;
+}
+
+/*
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  padding-right: 20px;
+  margin-right: 1rem;
+  font-size: 0.5rem;
+  line-height: inherit;
+  white-space: normal;
+}*/
+
+.banner .container .texto {
 	position: absolute;
 	height: 100px;
 
-	top: 0;
-	left: 0rem;
-	right: 30rem;
+	top: 214px;
+	left: 80px;
+	width: 553px;
 	text-align: left;
 	color:#000000;
 	z-index: 5;
 }
 
-.banner .container h1 {
+.banner .container .texto h1 {
 
 	font-weight: bold;
-	text-transform: uppercase;
-	margin-top: 5em;
-  margin-right: 10em;
-  font-size: 50px;
+	font-family: 'Roboto';
+  font-size: 60px;
   text-align: left;
   margin-left: 0;
 }
 
 
+.banner .container .texto p {
+
+	font-weight: bold;
+	font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #121212;
+}
+.boton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 333px;
+	height: 114px;
+	background: #5497A7;
+	color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 800;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: absolute;
+	overflow: hidden;
+	margin-top: 1cm;
+	margin-left: 5cm;
+  left: 1019px;
+top: 542px;
+}
+.descargas{
+  position: relative;
+;
+height: 400px;
+padding: 10%;
 
 
+}
+
+.descargas h1
+{
+  text-align: center;
+font-size: 40px;
+}
+
+.descargas .so
+{
+  
+ margin-left: 20%;
+ margin-right: 20%;
+ padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.play-app {
+  margin-left: 10%;
+ margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.play-app img{
+
+ 
+width: 40%;
+height: 35%;
+}
+.destinos{
+  position:relative;
+  background-color: #78CAD2;
+  height: 800px;
+  
+}
+.destinos .descripcion{
+padding-top: 4%;
+padding-left: 3%;
+padding-right: 55%;
+  text-align: left;
+  font-size: 38px;
+}
+.destinos .descripcion p{
+  font-size: 25px;
+}
+
+.destinos img{
+  position: absolute;
+left: 47%;
+  width: 53%;
+  height: 800px;
+  top: 0;
+}
+
+.destinos button{
+  width: auto;
+  max-width: 220px;
+  background: #62A8AC;
+border-radius: 10px;
+height: auto;
+max-height: 53px;
+padding-top: 10px;
+margin-top:10px ;
+padding-bottom: 10px;
+margin-bottom: 67px;
+margin-left: 20px;
+border: none;
+font-size: 20px;
+  }
+
+  .viajes{
+    position:relative;
+    padding: 50px;
+    height: 800px;
+    
+  }
+.viajes img{
+  padding-top: 60px;
+  width: 45%;
+  border-radius: 100px;
+  
+  left: 2%;
+  right: 30.5%;
+
+}
+.viajes .descripcion{
+  position: absolute;
+text-align: center;
+width: 45%;
+left: 50%;
+font-size: 40px;
+}
+.viajes p{
+  font-size: 20px;
+  color: #696969;
+  padding: 0;
+  
+}
+.viajes .aerolineas{
+ padding-left: 10%;
+ padding-right: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.viajes .aerolineas img{
+  width: 22%;
+  border-radius: 0%;
+  
+}
+
+.hotel {
+  position:relative;
+  padding: 10px;
+  height: 770px;
+  background-color: #A1D2CE;
+}
+
+.hotel  h1{
+  background-color:#62A8AC;
+text-align: center;
+font-size: 40px;
+top:5% ;
+width: 100%;
+margin-bottom: 38px;
+
+}
+.hotel p
+{
+  
+  font-size: 20px;
+  margin-left: 5%;
+
+  width: 40%;
+  line-height: 250%;
+letter-spacing: 0.015em;
+}
+
+.hotel img{
+
+  top: 21%;
+  position: absolute;
+  left: 45%;
+  width: 53%;
+  border-radius: 10px;
+  border: 1px solid #000000;
+
+}
+.opinion{
+  padding: 5%;
+  height: 470px;
+}
+
+.opinion img{
+position: absolute;
+  width: 28%;
+margin-left: 9%;
+}
+.opinion p{
+  font-size: 21px;
+  top: 5%;
+  left:50%;
+  position: relative;
+}
+.opinion .figura{
+  position: absolute;
+margin-top: 1%;
+width: 500px;
+height: 360px;
+margin-left: 12%;
+border: 1px  solid #4D77FF;
+
+}
+footer{
+  display: flex;
+  flex-direction: row;
+}
+
+footer .descp{
+  padding-left:5%;
+}
+footer .social {
+  padding-left:15%;
+}
+footer  h3{
+ font-size: 23px;
+}
+
+footer .social .redes{
+  padding-left: 0%;
+  font-size: 30px;
+}
